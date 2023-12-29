@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Box, Modal, Typography } from "@mui/material";
+import { Button, Box, Modal, Typography, Link } from "@mui/material";
 
 export const Modals = () => {
   const [open, setOpen] = useState(false);
@@ -10,10 +10,17 @@ export const Modals = () => {
         <Box position="absoulte" top="50%" left="50%"></Box>
         <Typography>This is Modal</Typography>
 
-        <Button varient="contained" onClick={() => setOpen(false)}>
+        <Button variant="contained" onClick={() => setOpen(false)}>
           cancel
         </Button>
       </Modal>
+
+      <Link
+        variant="h4"
+        color="secondary"
+        href="https://www.youtube.com/c/techinfoyt"
+        underline="always"
+      ></Link>
     </div>
   );
 };

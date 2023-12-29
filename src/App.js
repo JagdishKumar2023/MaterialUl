@@ -1,11 +1,14 @@
+import { Container } from "@mui/material";
 import "./App.css";
-import { Cards } from "./MaterialUI/Cards";
+// import { Cards } from "./MaterialUI/Cards";
+import { Modals } from "./MaterialUI/Modals";
 
 function App() {
   return (
     <div>
-      <Cards />
+      {/* <Cards /> */}
       {/* <Modals /> */}
+      <Container />
       {/* button style in material ui */}
 
       {/* <Typography variant="h1" component={"h2"} sx={{ color: "green" }}>

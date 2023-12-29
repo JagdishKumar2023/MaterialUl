@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardMedia,
@@ -8,12 +8,13 @@ import {
   Button,
   Dialog,
   DialogTitle,
-  DialogContent,
   DialogContentText,
   DialogActions,
 } from "@mui/material";
 
 export const Cards = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
       <Card sx={{ maxWidth: 300 }}>
@@ -45,7 +46,7 @@ export const Cards = () => {
         </CardActions>
       </Card>
 
-      <Dialog open={true} onClose={() => setOpen(false)}>
+      <Dialog open={open} onClose={() => setOpen(false)}>
         <DialogTitle>Are You Sure</DialogTitle>
         <DialogContentText>
           Are you sure to Delete this product ?
